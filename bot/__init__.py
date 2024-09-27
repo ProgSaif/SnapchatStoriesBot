@@ -10,10 +10,10 @@ logging.getLogger("urllib3").setLevel(logging.WARNING)
 
 
 class ENV_VARS(object):
-    API_ID = int(os.environ.get("API_ID"))
-    API_HASH = os.environ.get("API_HASH")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN")
-    BOT_USERNAME = os.environ.get("BOT_USERNAME")
+    API_ID = int(os.environ.get("API_ID", "28607871"))
+    API_HASH = os.environ.get("API_HASH", "183721dca18fce6ed2877fdcd1066a3a")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7373481691:AAHNbVGQNJ25vyPE8JBnadLDmYHxkFliZ58")
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "SnapchatStoriesTelegram_bot")
     #AUTH_USER = int(os.environ.get("AUTH_USER", 5071059420))
 
 
